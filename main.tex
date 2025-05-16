@@ -1,0 +1,251 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper, 11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames, dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\definecolor{brandeisblue}{rgb}{0.0, 0.44, 1.0}
+
+\usepackage[
+	colorlinks=true,
+	linkcolor=brandeisblue,
+	urlcolor=brandeisblue,
+	citecolor=blue,
+	anchorcolor=blue
+]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{ \vspace{-4pt}\scshape\raggedright\large\bfseries }{}{0em}{}[
+\color{black}
+\titlerule
+\vspace{-5pt}
+]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{ \item\small{ {#1 \vspace{-2pt}} } }
+
+\newcommand{\classesList}[4]{ \item\small{ {#1 #2 #3 #4 \vspace{-2pt}} } }
+
+\newcommand{\resumeSubheading}[4]{
+\vspace{-2pt}
+\item
+\begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+	\textbf{#1}       & \textbf{\small #2} \\
+	\textit{\small#3} & \textit{\small #4} \\
+\end{tabular*}
+\vspace{-8pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{ \item
+\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+	\textit{\small#1} & \textit{\small #2} \\
+\end{tabular*}
+\vspace{-8pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{ \item
+\begin{tabular*}{1.0\textwidth}{l@{\extracolsep{\fill}}r}
+	\small{#1} & \textbf{\small #2} \\
+\end{tabular*}
+\vspace{-10pt}
+}
+
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}
+\vspace{-6pt}}
+
+\renewcommand{\labelitemi}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand{\labelitemii}{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\vspace{-6pt}\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}
+\vspace{-6pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+	\begin{center}
+		{\Huge \scshape Matthew Esposito} \\
+		\vspace{1pt}
+		Yorktown, VA \\
+		\vspace{1pt}
+		\href{mailto:maesposito@wm.edu}{\raisebox{-0.2\height}{\faEnvelope}\ \underline{maesposito@wm.edu}}
+		~
+		\href{https://linkedin.com/in/matthew-esposito-a00813293/}{\raisebox{-0.2\height}{\faLinkedin}\ \underline{linkedin.com/in/matthew-esposito-a00813293}}
+        ~
+        \href{https://matthew.science/}{\raisebox{-0.2\height}{\faGlobe}\ \underline{matthew.science}}
+		\vspace{-8pt}
+	\end{center}
+
+	%-----------EDUCATION-----------
+	\section{Education}
+	\resumeSubHeadingListStart \resumeSubheading {William \& Mary}{Expected May 2026}
+	{BS in Computer Science \& BA in Philosophy}{Williamsburg, VA}
+	\resumeItemListStart \resumeItem{Lead DevOps, Linux Club; Speaker at W\&M Cypher Hackathon}
+	\resumeItem{Awards: 2x W\&M Cypher Hackathon Award, \href{https://nationalcyberleague.org/competition}{Cyber NCL} team placed \textbf{3rd} (Spring '25), \href{https://www.wm.edu/as/computerscience/about-contactus/news/william-mary-cyber-teams-close-out-2024-ranked-6th-in-the-nation.php}{\textbf{6th} (Fall '24)} nationwide}
+	\resumeItemListEnd \resumeSubHeadingListEnd
+
+	%------RELEVANT COURSEWORK-------
+	\section{Relevant Coursework}
+	\begin{multicols}{4}
+		{\small \begin{itemize}[itemsep=-5pt, parsep=3pt]\item Algorithms
+
+		\item Computer Organization
+
+		\item Software Development
+
+		\item Finite Automata
+
+		\item Competitive Programming
+
+		\item Applied Cybersecurity
+
+		\item Cloud Computing
+
+		\item Computer/Network Security
+
+		\item Ethics in Data Science
+
+		\item Philosophy of Technology\end{itemize} }
+	\end{multicols}
+	\vspace*{2.0\multicolsep}
+
+	%-----------EXPERIENCE-----------
+	\section{Experience}
+	\resumeSubHeadingListStart
+
+	\resumeSubheading {Memfault}{May 2024 -- August 2024}
+	{Software Engineering Intern}{Boston, MA} \resumeItemListStart \resumeItem{Designed and implemented new feature to parse and report stack traces in Rust and Python, }
+	\resumeItem{Trained a machine learning model to categorize embedded hardware’s stack traces and core dumps into common fault categories, achieving \>95\% accuracy and helping customers more rapidly fix problems.}
+	\resumeItem{Identified and resolved CI/CD bottlenecks, reducing run times and cutting costs.}
+	\resumeItem{Created tool to integrate with Algolia APIs to measure engagement in high-potential target accounts.}
+	\resumeItemListEnd
+
+	\resumeSubheading {Pex (Remote)}{December 2023 -- April 2024} {Software and Hardware Developer}{}
+	\resumeItemListStart \resumeItem{Developed embedded IoT prototypes from inception to testing in 12 weeks}
+	\resumeItem{Architected solutions with C++ embedded systems, sound protocols, and cellular modem development}
+	\resumeItem{Wrote C++ library for integrating with SIM7600 cellular modem for sub-30ms latency HTTPS/MQTT communication}
+	\resumeItemListEnd
+
+	\resumeSubheading {Geospatial Evaluation and Observation Lab}{January 2023 -- Present}
+	{Software Developer, Team Lead}{Williamsburg, VA} \resumeItemListStart
+	\resumeItem{Built SCOPE, a news info extraction/summarization tool with ML and LLMs.}
+	\resumeItem{Led team and developed Kubernetes deployments and CI/CD pipelines.}
+	\resumeItemListEnd
+
+	\resumeSubheading {Trilium.cc}{December 2021 -- Present} {Founder}{} \resumeItemListStart
+	\resumeItem{Starting a Software-as-a-service business and Linux server management.}
+	\resumeItem{Serving over 150 customers and maintaining 99.9\% uptime while learning backend development.}
+	\resumeItem{Automated system tasks including backups, updates, and new server deployments with Ansible.}
+	\resumeItemListEnd
+
+	\resumeSubHeadingListEnd
+
+	%-----------PROJECTS-----------
+	\section{Projects}
+	\resumeSubHeadingListStart
+
+	\resumeProjectHeading {\href{https://github.com/redlib-org/redlib}{\textbf{Redlib}} $|$ \emph{Rust, Docker, CI/CD, Reverse Engineering}}{Nov 2022 -- Present}
+	\resumeItemListStart \resumeItem{Maintainer of open-source Reddit frontend (2k+ stars, 1M+ container pulls/mo, 100k+ hits/day on popular instances).}
+	\resumeItem{Enabled access for censorship-heavy regions, bulk academic research.}
+	\resumeItem{Reverse-engineered Reddit mobile API for unthrottled data access.}
+	\resumeItem{Implemented peer-to-peer protocol to coordinate handling instance outages live.}
+	\resumeItemListEnd
+
+	\resumeProjectHeading {\href{https://focusguardian.org}{\textbf{FocusGuardian}} $|$ \emph{Rust, Vue, C++, PocketBase, Tailwind}}{April 2024}
+	\resumeItemListStart \resumeItem{Full-stack web \& mobile app with hardware prototype (C++/LVGL).}
+	\resumeItem{Rust-based backend handling DNS-over-HTTPS requests according to user-set schedule, 10k+ req/s.}
+	\resumeItem{Built in 24-hour solo hackathon; won Best Hardware Hack.} \resumeItem{Wrote \href{https://matthew.science/posts/focusguardian/}{blog post} about experience.}
+	\resumeItemListEnd
+
+	\resumeProjectHeading {\textbf{OccuMetrics} $|$ \emph{C++, IoT, ESP32, Grafana, SQLite, ML}}{Sep 2023 -- Dec 2023}
+	\resumeItemListStart \resumeItem{Campus occupancy prediction via IoT devices and serverless stack.}
+	\resumeItem{\>90\% accuracy in long-term forecasting using Prophet + time series ML.}
+	\resumeItem{\href{https://matthew.science/posts/occupancy/}{Writeup} featured on \href{https://hackaday.com/2023/12/13/bluetooth-as-proxy-for-occupancy/}{Hackaday} and cited in \href{https://efi.mit.edu/spring24/ex01/research}{MIT Engineering courses}.}
+	\resumeItemListEnd
+
+	\resumeSubHeadingListEnd
+
+	%-----------RESEARCH-----------
+	\section{Research}
+	\resumeSubHeadingListStart \resumeSubheading {Vulnerability Testing Report}{Sep 2024 -- Dec 2024}
+	{Volunteer Cybersecurity Researcher}{Williamsburg, VA} \resumeItemListStart \resumeItem{Performed a volunteer full security assessment of a local business; authored 22-page CVSS report.}
+	\resumeItem{Recommended remediations led to complete patching and mitigation.}
+	\resumeItem{Disclosure coordinated; redacted report available on request.}
+	\resumeItemListEnd \resumeSubHeadingListEnd
+
+	%-----------LEADERSHIP & COMMUNITY-----------
+	\section{Leadership / Community Involvement}
+	\resumeSubHeadingListStart
+
+	\resumeSubheading {Linux/FOSS Club}{Sep 2023 -- Present} {Founding Member, DevOps Lead}{Williamsburg, VA}
+	\resumeItemListStart \resumeItem{Promoting tech literacy and writing FOSS user guides.}
+	\resumeItemListEnd
+
+	\resumeSubheading {Speaker, “A Case for Rust” – W\&M Cypher Hackathon}{March 2023}
+	{Sponsored by Rust Foundation}{Williamsburg, VA} \resumeItemListStart
+	\resumeItem{Delivered \href{https://matthew.science/rust-talk-matthew-esposito.pdf}{technical talk} and workshop introducing Rust programming.} \resumeItemListEnd
+
+	\resumeSubHeadingListEnd
+
+	%-----------TECHNICAL SKILLS-----------
+	\section{Technical Skills}
+	\begin{itemize}[leftmargin=0.15in, label={}]
+		\small{\item{ \textbf{Technical Areas}{: Backend Development, IoT, Embedded Systems, Systems Programming, DevOps, Docker, Git, Nginx, Prometheus, Grafana} \\ \textbf{Languages}{: Rust, C, C++, C\#, Python, Bash, JavaScript} \\ \textbf{Interests}{: Open Source, Linux, Rust} }}
+	\end{itemize}
+\end{document}
