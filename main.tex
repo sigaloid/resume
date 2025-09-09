@@ -126,50 +126,32 @@
 		\vspace{1pt}
 		\href{mailto:maesposito@wm.edu}{\raisebox{-0.2\height}{\faEnvelope}\ \underline{maesposito@wm.edu}}
 		~
-		\href{https://linkedin.com/in/matthew-esposito-a00813293/}{\raisebox{-0.2\height}{\faLinkedin}\ \underline{linkedin.com/in/matthew-esposito-a00813293}}
+		\href{https://linkedin.com/in/matthew-esposito-a00813293/}{\raisebox{-0.2\height}{\faLinkedin}\ \underline{linkedin/matthew-esposito-a00813293}}
         ~
         \href{https://matthew.science/}{\raisebox{-0.2\height}{\faGlobe}\ \underline{matthew.science}}
+        ~
+        \href{https://github.com/sigaloid}{\raisebox{-0.2\height}{\faGithub}\ \underline{sigaloid}}
 		\vspace{-8pt}
 	\end{center}
 
 	%-----------EDUCATION-----------
 	\section{Education}
 	\resumeSubHeadingListStart \resumeSubheading {William \& Mary}{Expected May 2026}
-	{BS in Computer Science \& BA in Philosophy}{Williamsburg, VA}
-	\resumeItemListStart \resumeItem{Lead DevOps, Linux Club; Speaker at W\&M Cypher Hackathon}
+	{BS in Computer Science \& BA in Philosophy -  Concentration in Ethics for Data \& Computing}{Williamsburg, VA}
+	\resumeItemListStart
+    % \resumeItem{Lead DevOps, Linux Club; Speaker at W\&M Cypher Hackathon}
 	\resumeItem{Awards: 2x W\&M Cypher Hackathon Award, \href{https://nationalcyberleague.org/competition}{Cyber NCL} team placed \href{https://www.wm.edu/as/computerscience/about-contactus/news/tribecyber-has-spoken.php}{\textbf{2nd} (Spring `25)}, \href{https://www.wm.edu/as/computerscience/about-contactus/news/william-mary-cyber-teams-close-out-2024-ranked-6th-in-the-nation.php}{\textbf{6th} (Fall `24)} nationwide}
 	\resumeItemListEnd \resumeSubHeadingListEnd
 
-	%------RELEVANT COURSEWORK-------
-	\section{Relevant Coursework}
-	\begin{multicols}{4}
-		{\small \begin{itemize}[itemsep=-5pt, parsep=3pt]\item Algorithms
-
-		\item Computer Organization
-
-		\item Software Development
-
-		\item Finite Automata
-
-		\item Applied Cybersecurity
-
-		\item Cloud Computing
-
-		\item Computer/Network Security
-
-		\item Ethics in Data Science
-
-		\item Philosophy of Technology\end{itemize} }
-	\end{multicols}
-	\vspace*{2.0\multicolsep}
 
 	%-----------EXPERIENCE-----------
 	\section{Experience}
 	\resumeSubHeadingListStart
 	\resumeSubheading {Memfault}{May 2025 -- August 2025}
-	{Software Engineering Intern}{Boston, MA} \resumeItemListStart \resumeItem{Created {\href{https://pypi.org/project/pyfault/}{Python library}} to intercept unhandled exceptions and report them to Memfault platform, enabling plug-and-play error collection for Python customers}
+	{Software Engineering Intern}{Boston, MA} \resumeItemListStart \resumeItem{Created {\href{https://pypi.org/project/pyfault/}{Python library}} to intercept unhandled exceptions and report them to Memfault platform, enabling plug-and-play error collection and observability for Python customers}
 	\resumeItem{Extended Linux SDK to support {\href{https://github.com/memfault/memfaultd/releases/tag/1.23.0}{custom traces}}, allowing for more flexible error reporting}
 	\resumeItem{Implemented full unit and integration tests, extended BitBake recipes and QEMU test images to verify custom trace implementation}
+	\resumeItem{Feature implementations in high-volume data ingestion pipeline}
 	\resumeItemListEnd
 
 	\resumeSubheading {Memfault}{May 2024 -- August 2024}
@@ -189,6 +171,7 @@
 	{Software Developer, Team Lead}{Williamsburg, VA} \resumeItemListStart
 	\resumeItem{Built SCOPE, a news info extraction/summarization tool with ML and LLMs.}
 	\resumeItem{Led team and developed Kubernetes deployments and CI/CD pipelines.}
+	\resumeItem{Implemented data ingestion pipeline for SCOPE, enabling real-time data processing and analysis via LLMs.}
 	\resumeItemListEnd
 
 	\resumeSubheading {Trilium.cc}{December 2021 -- Present} {Founder}{} \resumeItemListStart
@@ -204,10 +187,12 @@
 	\resumeSubHeadingListStart
 
 	\resumeProjectHeading {\href{https://github.com/redlib-org/redlib}{\textbf{Redlib}} $|$ \emph{Rust, Docker, CI/CD, Reverse Engineering}}{Nov 2022 -- Present}
-	\resumeItemListStart \resumeItem{Maintainer of open-source Reddit frontend (2.2k+ stars, 1.5M+ container pulls/mo, 100k+ hits/day on popular instances).}
+	\resumeItemListStart
+    \resumeItem{Maintainer of open-source Reddit frontend (2k+ stars, 1.7M+ container pulls/mo, 100k+ hits/day on popular instances)}
 	\resumeItem{Enabled access for censorship-heavy regions, bulk academic research.}
-	\resumeItem{Reverse-engineered Reddit mobile API for unthrottled data access.}
+	\resumeItem{Reverse-engineered Reddit mobile API for unthrottled data access for public benefit.}
 	\resumeItem{Implemented peer-to-peer protocol to coordinate handling instance outages live.}
+	\resumeItem{Performant backend development for very high-traffic Redlib instances.}
 	\resumeItemListEnd
 
 	\resumeProjectHeading {\href{https://focusguardian.org}{\textbf{FocusGuardian}} $|$ \emph{Rust, Vue, C++, PocketBase, Tailwind}}{April 2024}
@@ -217,8 +202,8 @@
 	\resumeItemListEnd
 
 	\resumeProjectHeading {\textbf{OccuMetrics} $|$ \emph{C++, IoT, ESP32, Grafana, SQLite, ML}}{Sep 2023 -- Dec 2023}
-	\resumeItemListStart \resumeItem{Campus occupancy prediction via IoT devices and serverless stack.}
-	\resumeItem{90+\% accuracy in long-term forecasting using Prophet + time series ML.}
+	\resumeItemListStart \resumeItem{Campus occupancy prediction via BLE beacon counting IoT devices and serverless stack.}
+	\resumeItem{90+\% accuracy in long-term trend forecasting using Prophet + time series ML.}
 	\resumeItem{\href{https://matthew.science/posts/occupancy/}{Writeup} featured on \href{https://hackaday.com/2023/12/13/bluetooth-as-proxy-for-occupancy/}{Hackaday} and cited in \href{https://efi.mit.edu/spring24/ex01/research}{MIT Engineering courses}.}
 	\resumeItemListEnd
 
@@ -227,10 +212,41 @@
 	%-----------RESEARCH-----------
 	\section{Research}
 	\resumeSubHeadingListStart \resumeSubheading {Vulnerability Testing Report}{Sep 2024 -- Dec 2024}
-	{Volunteer Cybersecurity Researcher}{Williamsburg, VA} \resumeItemListStart \resumeItem{Performed a volunteer full security assessment of a local business; authored 22-page CVSS report.}
+	{Volunteer Cybersecurity Researcher}{Williamsburg, VA} \resumeItemListStart \resumeItem{Performed a volunteer full security assessment of a local business's public mobile app; authored 22-page CVSS report.}
+    \resumeItem{Discovered six serious security vulnerabilities, from advanced side channel methods to basic authentication failures}
 	\resumeItem{Recommended remediations led to complete patching and mitigation.}
 	\resumeItem{Disclosure coordinated; redacted report available on request.}
 	\resumeItemListEnd \resumeSubHeadingListEnd
+
+    	%------RELEVANT COURSEWORK-------
+	\section{Relevant Coursework}
+	\begin{multicols}{4}
+		{\small \begin{itemize}[itemsep=-5pt, parsep=3pt]\item Algorithms
+
+		\item Computer Organization
+
+		\item Software Development
+
+		\item Finite Automata
+
+		\item Operating Systems
+
+		\item Applied Cybersecurity
+
+		\item Cloud Computing
+
+		\item Computer/Network Security
+
+		\item Ethics in Data Science
+
+		\item Philosophy of Technology
+
+		\item Linear Algebra
+
+		\end{itemize} }
+	\end{multicols}
+	\vspace*{2.0\multicolsep}
+
 
 	%-----------LEADERSHIP & COMMUNITY-----------
 	\section{Leadership / Community Involvement}
