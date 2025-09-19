@@ -148,8 +148,10 @@
 	\section{Experience}
 	\resumeSubHeadingListStart
 	\resumeSubheading {Memfault}{May 2025 -- August 2025}
-	{Software Engineering Intern}{Boston, MA} \resumeItemListStart \resumeItem{Created {\href{https://pypi.org/project/pyfault/}{Python library}} to intercept unhandled exceptions and report them to Memfault platform, enabling plug-and-play error collection and observability for Python customers}
-	\resumeItem{Extended Linux SDK to support {\href{https://github.com/memfault/memfaultd/releases/tag/1.23.0}{custom traces}}, allowing for more flexible error reporting}
+	{Software Engineering Intern}{Boston, MA} \resumeItemListStart
+    \resumeItem{Added features to high volume backend processing pipeline in Python, retaining performance and correctness}
+	\resumeItem{Extended Linux SDK to support {\href{https://memfault.com/blog/product-updates-python-support-custom-trace-capture-linux-issue-monitoring-updates/}{custom traces}}, allowing for more flexible error reporting, in Rust}
+    \resumeItem{Created {\href{https://pypi.org/project/pyfault/}{Python library}} to intercept unhandled exceptions and report them to Memfault platform, enabling plug-and-play error collection and observability for Python customers}
 	\resumeItem{Implemented full unit and integration tests, extended BitBake recipes and QEMU test images to verify custom trace implementation}
 	\resumeItem{Feature implementations in high-volume data ingestion pipeline}
 	\resumeItemListEnd
@@ -158,20 +160,21 @@
 	{Software Engineering Intern}{Boston, MA} \resumeItemListStart \resumeItem{Designed and implemented new feature to parse and report stack traces in Rust and Python}
 	\resumeItem{Trained a machine learning model to categorize embedded hardware's stack traces and core dumps into common fault categories, achieving \textgreater 95\% accuracy and helping customers more rapidly fix problems.}
 	\resumeItem{Identified and resolved CI/CD bottlenecks, reducing run times and cutting costs.}
-	\resumeItem{Created tool to integrate with Algolia APIs to measure engagement in high-potential target accounts.}
+	\resumeItem{Created tool to integrate CRM tools with Algolia APIs to measure engagement in high-potential target accounts.}
+	\resumeItemListEnd
+
+	\resumeSubheading {Geospatial Evaluation and Observation Lab}{January 2023 -- Present}
+	{Software Developer, Team Lead}{Williamsburg, VA} \resumeItemListStart
+    \resumeItem{Productionized \href{https://auix.org/wp-content/uploads/2025/05/Ryan-Paoloni-Icebreaker-Your-Personal-AI-Advisor-for-Dynamic-Wargaming.pdf}{ICEBREAKER} project, a wargaming evaluation tool backed by RAG-enabled LLM, with applications to political-military wargaming simulations}
+	\resumeItem{Built SCOPE, a news info extraction/summarization tool with ML and LLMs.}
+	\resumeItem{Led team and developed Kubernetes deployments and CI/CD pipelines.}
+	\resumeItem{Implemented data ingestion pipeline for SCOPE, enabling real-time data processing and analysis via LLMs.}
 	\resumeItemListEnd
 
 	\resumeSubheading {Pex (Remote)}{December 2023 -- April 2024} {Software and Hardware Developer}{}
 	\resumeItemListStart \resumeItem{Developed embedded IoT prototypes from inception to testing in 12 weeks}
 	\resumeItem{Architected solutions with C++ embedded systems, sound protocols, and cellular modem development}
 	\resumeItem{Wrote C++ library for integrating with SIM7600 cellular modem for sub-30ms latency HTTPS/MQTT communication}
-	\resumeItemListEnd
-
-	\resumeSubheading {Geospatial Evaluation and Observation Lab}{January 2023 -- Present}
-	{Software Developer, Team Lead}{Williamsburg, VA} \resumeItemListStart
-	\resumeItem{Built SCOPE, a news info extraction/summarization tool with ML and LLMs.}
-	\resumeItem{Led team and developed Kubernetes deployments and CI/CD pipelines.}
-	\resumeItem{Implemented data ingestion pipeline for SCOPE, enabling real-time data processing and analysis via LLMs.}
 	\resumeItemListEnd
 
 	\resumeSubheading {Trilium.cc}{December 2021 -- Present} {Founder}{} \resumeItemListStart
@@ -188,11 +191,12 @@
 
 	\resumeProjectHeading {\href{https://github.com/redlib-org/redlib}{\textbf{Redlib}} $|$ \emph{Rust, Docker, CI/CD, Reverse Engineering}}{Nov 2022 -- Present}
 	\resumeItemListStart
-    \resumeItem{Maintainer of open-source Reddit frontend (2k+ stars, 1.7M+ container pulls/mo, 100k+ hits/day on popular instances)}
-	\resumeItem{Enabled access for censorship-heavy regions, bulk academic research.}
+    \resumeItem{Maintainer of open-source Reddit frontend (2.5k+ stars, 1.7M+ container pulls/mo, 100k+ hits/day on large instances)}
+	\resumeItem{Enabled public access for censorship-heavy regions, bulk academic research.}
 	\resumeItem{Reverse-engineered Reddit mobile API for unthrottled data access for public benefit.}
-	\resumeItem{Implemented peer-to-peer protocol to coordinate handling instance outages live.}
-	\resumeItem{Performant backend development for very high-traffic Redlib instances.}
+	\resumeItem{Implemented peer-to-peer coordination protocol to handle instance blockages live, based on HyParView/PlumTree epidemic broadcast trees, as part of a project for my Cloud Computing class.}
+	\resumeItem{Performant backend development for very high-traffic Redlib instances, with proper caching/compression/lazy loading, as well as best practices for lightweight webpages}
+    \resumeItem{Code review, OSS leadership, mentoring contributors}
 	\resumeItemListEnd
 
 	\resumeProjectHeading {\href{https://focusguardian.org}{\textbf{FocusGuardian}} $|$ \emph{Rust, Vue, C++, PocketBase, Tailwind}}{April 2024}
